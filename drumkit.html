@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="drumkit.css" rel="stylesheet">
+    <script src ="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/d69cd8c0b2.js" crossorigin="anonymous"></script>
+    <script defer src = "drumkit.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>CactusTrax</h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="drumkit.html"><i class="fas fa-address-card"></i>Drum Kit</a></li>
+                <li><a href="reviews.html"><i class="far fa-comments"></i> Comments</a></li>
+                <li><a href="tutorials.html"><i class="fas fa-book"></i>Tutorials</a></li>
+                <li><a href="downloads.html"><i class="fas fa-arrow-circle-down"></i>Downloads</a></li>
+		        <li><a href="theory.html"><i class="fas fa-book"></i>Music Theory</a></li>
+            </ul> 
+            <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header">CactusTrax Drum Kit</div>  
+            <div class="info">
+                <audio id = "kick"  src="samples/Cymatics - House Kick 2.wav"></audio> 
+                <input type="button" class = "Btn" id = "kickBtn" value="Kick=A" onclick="audioKick()">
+                <audio id = "snare"  src="samples/VEC4 Snares 002.wav"></audio>
+                <input type="button" class = "Btn" id = "snareBtn" value="Snare=S" onclick="audioSnare()">
+                <audio id = "hat"  src="samples/VEC1 Cymbals  OH 001.wav"></audio>
+                <input type="button" class = "Btn" id = "HatBtn" value="Hat=D" onclick="audioHat()">
+                <audio id = "clap"  src="samples/VEC4 Claps 005.wav"></audio>
+                <input type="button" class = "Btn" id = "ClapBtn" value="Clap=G" onclick="audioClap()">
+                <audio id = "laser"  src="samples/whoop.mp3"></audio>
+                <input type="button" class = "Btn" id = "LaserBtn" value="Laser=F" onclick="audioLaser()">
+                <br>
+                <label for="cars">Choose preset: </label>
+                <br>
+
+                <select name="kicks" id="kicks">
+                  <option value="kick1">Kick 1</option>
+                  <option value="kick2">Kick 2</option>
+                  <option value="kick3">Kick 3</option>
+                </select> 
+
+                <select name="snares" id="snares">
+                    <option value="snare1">Snare 1</option>
+                    <option value="snare2">Snare 2</option>
+                    <option value="snare3">Snare 3</option>
+                </select> 
+
+                <select name="hat" id="hat">
+                    <option value="hat1">Hat 1</option>
+                    <option value="hat2">Hat 2</option>
+                    <option value="hat3">Hat 3</option>
+                </select> 
+
+                <select name="clap" id="clap">
+                    <option value="clap1">Clap 1</option>
+                    <option value="clap2">Clap 2</option>
+                    <option value="clap3">Clap 3</option>
+                </select> 
+                
+          </div>
+        </div>
+    </div>
+</body>
+</html>

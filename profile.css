@@ -1,0 +1,16 @@
+select{
+    padding: 10px 40px 10px 40px;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 10px;
+    background-color: rgb(132, 130, 252);
+}
+
+/*displays the image and drop down next to each other instead of on top of each other */
+.info{
+    display: flex;
+}
+
+#profileImage{
+    margin-left: 70px;
+}

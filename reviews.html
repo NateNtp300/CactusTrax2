@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="review.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d69cd8c0b2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h2>CactusTrax</h2>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="drumkit.html"><i class="fas fa-address-card"></i>Drum Kit</a></li>
+                <li><a href="reviews.html"><i class="far fa-comments"></i> Comments</a></li>
+                <li><a href="tutorials.html"><i class="fas fa-book"></i>Tutorials</a></li>
+                <li><a href="downloads.html"><i class="fas fa-arrow-circle-down"></i>Downloads</a></li>
+		        <li><a href="theory.html"><i class="fas fa-book"></i>Music Theory</a></li>
+            </ul> 
+            <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="main_content">
+            <div class="header">Write a review</div>  
+            <div class="info">
+             
+              <div class = "reviewContainer">
+                  <h2>Leave a comment</h2>
+                  <form>
+                      <input id = "inputText" placeholder="Add Your Comment"></input>
+                      <div class = "button1">
+                          <button id = "btn1" type = "button" value="Comment" onclick="pushData()">Submit</button>
+                          <!--<button id = 'clear' onclick="clearText()">Cancel</button>-->
+                      </div>
+                  </form>
+                  
+              </div>
+
+              <p id ="pText"></p>
+
+              <script>
+                  var myArr = [];
+
+                  function pushData(){
+                      var inputText =document.getElementById("inputText").value;
+
+                      myArr.push(inputText);
+
+                      var pval = ""
+
+                      for (i = 0; i < myArr.length; i++){
+                        pval = pval + myArr[i] + "<br/><br/>";
+                        
+                      }
+
+                      document.getElementById('pText').innerHTML = pval;
+                      
+                  }
+
+                  function clearText(){
+                    var inputText =document.getElementById("inputText").value;
+
+                    inputText = "";
+                  }
+
+              </script>
+
+              <script src = 'review.js'></script>
+           
+             
+          </div>
+        </div>
+    </div>
+</body>
+</html>

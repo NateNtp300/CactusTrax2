@@ -1,0 +1,35 @@
+.reviewContainer{
+
+    width: 600px;
+    border: 2px solid black;
+    padding: 15px 10px;
+  }
+  
+  .reviewContainer h2{
+    text-align: center;
+  }
+  
+  .reviewContainer input{
+    height: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+  }
+
+  button{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(167, 176, 255);
+    
+  }
+
+  

@@ -1,0 +1,33 @@
+.Btn{
+    padding: 50px;
+    color: yellow;
+    background-color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: larger;
+    
+    
+        
+            
+        
+            
+    
+}
+
+
+
+.info{
+    padding: 150px;
+    /*makes it so buttons and drop downs dont change position on screen resize */
+    min-width: 3000px;
+    
+}
+
+select{
+    padding: 20px;
+    width: 170px;
+    font-size: larger;
+    font-weight: bold;
+    border: blue;
+    
+}
